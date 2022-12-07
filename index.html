@@ -1,64 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>Google!</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="header-container">
-        <img
-          src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg"
-          alt="Google image"
-        />
-      </div>
-      <div class="body-container">
-        <div class="search-container">
-          <span>Search the web using Google!</span>
-          <input type="text" value size="40" />
-          <div class="search-buttons">
-            <button>Google Search</button>
-            <button>I'm feeling lucky</button>
-          </div>
+</head>
+<body>
+<div class="main-container">
+    <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="Google image"/>
+    <div class="search-container">
+        <label for="search" class="title">Search the web using Google!</label>
+        <input id="search" class="search-input" value size="40" type="text"/>
+        <div class="button-container">
+            <button class="old-school-button">Google Search</button>
+            <button class="old-school-button">I'm feeling lucky</button>
         </div>
+    </div>
+    <div class="bottom-container">
         <div class="special-searches">
-          <ul>
-            <li>Special Searches</li>
-            <li><a href="#">Stanford Search</a></li>
-            <li><a href="#">Linux Search</a></li>
-          </ul>
+            <span>Special Searches</span>
+            <a href="#">Stanford Search</a>
+            <a href="#">Linux Search</a>
         </div>
         <div class="help-links">
-          <ul>
-            <li><a href="#">Help!</a></li>
-            <li><a href="#">About Google!</a></li>
-            <li><a href="#">Company Info</a></li>
-            <li><a href="#">Google! Logos</a></li>
-          </ul>
+            <a href="#">Help!</a>
+            <a href="#">About Google!</a>
+            <a href="#">Company Info</a>
+            <a href="#">Google! Logos</a>
         </div>
         <div class="subscription-container">
-          <ul>
-            <li><span id="get-google">Get Google!</span></li>
-            <li><label for="subcribtion-input">updates monthly:</label></li>
-            <li>
-              <input type="text" id="subcribtion-input" value="your e-mail" />
-            </li>
-            <li>
-              <div class="subcribe">
-                <button>Subscribe</button>
-                &nbsp;&nbsp;
-                <a href="#">Archive</a>
-              </div>
-            </li>
-          </ul>
+            <span id="get-google">Get Google!</span>
+            <label for="email">updates monthly:</label>
+            <input id="email" type="text" class="email-input" value="your e-mail"/>
+            <div class="subscribe-container">
+                <button class="subscribe-button">Subscribe</button>
+                <a href="#" class="archive">Archive</a>
+            </div>
         </div>
-      </div>
-      <div class="footer">
-        <span>Copyright ©1998 Google Inc.</span>
-      </div>
     </div>
-  </body>
+    <span class="footer">Copyright ©1998 Google Inc.</span>
+</div>
+</body>
 </html>
