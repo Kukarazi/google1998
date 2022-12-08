@@ -1,67 +1,130 @@
-body {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url('https://elgoog.im/assets/fonts/ms_sans_serif.woff2') format('woff2'), url('https://elgoog.im/assets/fonts/ms_sans_serif.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  padding-top: 5px;
-  margin-top: 0;
-  margin-bottom: 2px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
-  width: 94%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Times New Roman", Times, serif;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Pixelated MS Sans Serif', sans-serif !important;
 }
 
-.body-container {
-  display: grid;
-  grid-template-columns: 37% auto 43%;
-  gap: 2px;
-  width: inherit;
+.title {
+    padding: 3px 0 3px 0;
 }
 
 .search-container {
-  grid-column: span 3;
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex: 1;
+    width: inherit;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.search-input, .email-input {
+    height: 20px;
+    width: 288px;
+    padding: 2px 4px;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    border: none;
+    font-family: inherit;
+    font-size: 100%;
+    outline: 0;
+}
+
+.button-container {
+    height: 25px;
+    margin-top: 2px;
+}
+
+.old-school-button, .subscribe-button {
+    height: 25px;
+    font-size: 13px;
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    border: none;
+    border-radius: 0;
+    padding: 0 25px;
+    font-family: inherit;
+}
+
+.old-school-button:active, .subscribe-button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
 }
 
 .special-searches {
-  font-size: 16px;
-  background-color: #7ee5da;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ee5da;
 }
 
 .help-links {
-  font-size: 13px;
-  background-color: #70ccc2;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: #70ccc2;
 }
 
 .subscription-container {
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #62b3aa;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: #62b3aa;
+    padding-top: 2px;
 }
 
-.footer > span {
-  font-size: small;
+.email-input {
+    width: 150px;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.subscribe-button {
+    height: 22px;
+    padding: 0 15px;
+}
+
+.archive {
+    margin-left: 6px;
 }
 
 .footer {
-  margin-top: 1em;
+    padding-top: 20px;
+    font-size: 13px;
 }
+
